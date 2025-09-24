@@ -1,0 +1,197 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Cor de fundo suave */
+}
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: #ffffff;
+    font-weight: bold;
+    position: relative; /* Para o efeito de sublinhado */
+}
+nav a:hover {
+    text-decoration: none; /* Remove o sublinhado padrão ao passar o mouse */
+}
+nav a::after {
+    content: ''; /* Cria um pseudo-elemento */
+    display: block;
+    width: 100%; /* Largura do sublinhado */
+    height: 2px; /* Altura do sublinhado */
+    background: #25D366; /* Cor do sublinhado */
+    position: absolute; /* Posiciona o sublinhado */
+    left: 0; /* Alinha à esquerda */
+    bottom: -5px; /* Distância do texto */
+    transform: scaleX(0); /* Inicialmente invisível */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+nav a:hover::after {
+    transform: scaleX(1); /* Mostra o sublinhado ao passar o mouse */
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: white; /* Fundo branco para as seções */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: none;
+    text-align: center;
+
+}
+#produtos {
+    display: flex; /* Usando Flexbox para layout */
+    flex-wrap: wrap; /* Permite que os produtos se movam para a próxima linha */
+    justify-content: 10px; /* Espaçamento entre os produtos */
+}
+
+.whatsapp-button {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    z-index: 1000;
+    text-decoration: none;
+}
+.button {
+    display: flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    width: fit-content;
+}
+.button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.button span {
+    font-size: 14px;
+}
+
+
+    .sobre-nos  {
+        text-align: center; /* Centraliza o texto */
+        font-size: 24px; /* Tamanho da fonte */
+        font-weight: bold; /* Negrito */
+        color: #333; /* Cor do texto */
+        margin: 20px; /* Espaço ao redor do texto */
+    }
+
+    .descricao {
+        text-align: center; /* Centraliza o texto do parágrafo */
+        font-size: 16px; /* Tamanho da fonte do parágrafo */
+        color: #666; /* Cor do texto do parágrafo */
+        max-width: 600px; /* Largura máxima do parágrafo */
+        margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    }
+    
+   
+        
+        .footer {
+            display: flex; /* Usar flexbox para alinhar os ícones lado a lado */
+            justify-content: center; /* Centraliza os ícones horizontalmente */
+            padding: 10px;
+            background-color: #fff; /* Cor de fundo do rodapé */
+        }
+        
+        .social-icon {
+            margin: 0 10px; /* Espaçamento entre os ícones */
+        }
+        
+        .social-icon img {
+            width: 25px; /* Tamanho do ícone */
+            height: 25px; /* Tamanho do ícone */
+            transition: transform 0.3s; /* Efeito de transição */
+        }
+        
+        .social-icon img:hover {
+            transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+        }
+
+    .produtos {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f8f8f8;
+
+        }
+        
+        .produtos h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .produtos h2 span {
+            color: #007bff;
+        }
+        
+        .descricao {
+            max-width: 600px;
+            margin: 10px auto 30px;
+            font-size: 16px;
+            color: #555;
+        }
+        
+        /* Layout dos produtos */
+        .container-produtos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .produto {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            width: 220px;
+            margin: 50px;
+            
+            
+        }
+        
+        .produto img {
+            width: 100%;
+            border-radius: 10px;
+            max-width: 100%; /* A imagem não ultrapassa a largura do contêiner */
+        max-height: 300px; /* Altura máxima para as imagens */
+        object-fit: cover; /* Corta a imagem para preencher o espaço sem distorção */
+        }
+        
+        .produto h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        
+        .produto button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+        
+        .produto button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+
+        }
+
+        

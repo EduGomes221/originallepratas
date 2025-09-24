@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Brincos e argolas</title>
+</head>
+<style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -500px;
+    margin: 50px;
+    background-color: #f0f0f0;
+}
+
+.galeria {
+    display: flex;
+    gap: 80px; /* Espaçamento entre os produtos */
+    justify-content: center; /* Centraliza os produtos */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+}
+
+.produto {
+    text-align: center; /* Centraliza o texto dentro de cada produto */
+    background-color: #fff; /* Fundo branco para cada produto */
+    padding: 70px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 200px; /* Largura fixa para cada produto */
+        position: relative;
+        
+}
+
+.produto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: 230px; /* Define uma altura fixa */
+    max-width: 100%; /* Para garantir que as imagens não ultrapassem o tamanho do contêiner */
+    border-radius: 10px;
+    object-fit: cover; /* Cobre o contêiner mantendo a proporção */
+
+}
+
+.preco {
+    font-weight: bold; /* Destaca o preço */
+    color: #e74c3c; /* Cor do preço */
+}
+
+.button2 {
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px;
+    width: fit-content;
+    text-align: center; /* Centraliza o texto */
+}
+.button2:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.estoque {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+.esgotado {
+    background-color: #ffcccc; /* Cor de fundo para indicar esgotado */
+    color: #ff0000; /* Cor do texto */
+    text-decoration: line-through; /* Texto riscado */
+}
+</style>
+<body>
+    
+    <div class="galeria">
+        <div class="produto">
+            <img src="BrincoseArgolas/argola_triodeargolalisa.jpg" alt="produto1" class="imagem">
+                <dl class="dl">
+                    <dt><strong>TRIO DE ARGOLA LISA</strong></dt>
+                    <p>(Vendidos separadamente)</p>
+                    <p><b>R$ 119,90</b></p>
+                </dl>     
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+
+        <div class="produto">
+            <img src="BrincoseArgolas/ArgolaCravejadaG.jpg" alt="produto2" class="imagem">
+                <dl class="dl">
+                    <dt><strong>ARGOLA CRAVEJADA G</strong></dt>
+                    <p><b>R$ 75,00</b></p>
+                </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+
+        <div class="produto">
+            <img src="BrincoseArgolas/ArgolaCravejadaM.jpg" alt="produto3" class="imagem">
+            <dl class="dl">
+                    <dt><strong>ARGOLA CRAVEJADA M</strong></dt>
+                    <p><b>R$ 65,00</b></p>
+            </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+        <div class="produto">
+            <img src="BrincoseArgolas/brinco_coração.jpg" alt="produto3" class="imagem">
+            <dl class="dl">
+                    <dt><strong>BRINCO CORAÇÃO P</strong></dt>
+                    <p><b>R$ 35,00</b></p>
+            </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+        <div class="produto">
+            <img src="BrincoseArgolas/brinco_cristal.jpg" alt="produto3" class="imagem">
+            <dl class="dl">
+                    <dt><strong>BRINCO CORAÇÃO COM CRISTAL</strong></dt>
+                    <p><b>R$ 55,00</b></p>
+            </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+        <div class="produto">
+            <img src="BrincoseArgolas/brinco_folha.jpg" alt="produto3" class="imagem">
+            <dl class="dl">
+                    <dt><strong>BRINCO FOLHA</strong></dt>
+                    <p><b>R$ 30,00</b></p>
+            </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+        <div class="produto">
+            <img src="BrincoseArgolas/brinco_triopontodeluz.jpg" alt="produto3" class="imagem">
+            <dl class="dl">
+                    <dt><strong>TRIO PONTO DE LUZ</strong></dt>
+                    <P>(Vendidos separadamente)</P>
+                    <p><b>R$ 60,00</b></p>
+            </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+        <div class="produto">
+            <img src="BrincoseArgolas/meiaargola.jpg" alt="produto3" class="imagem">
+            <dl class="dl">
+                    <dt><strong>MEIA ARGOLA CRAVEJADA</strong></dt>
+                    <p><b>R$ 55,00</b></p>
+            </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+        <div class="produto">
+            <img src="BrincoseArgolas/trio_de_argolas.jpg" alt="produto3" class="imagem">
+            <dl class="dl">
+                    <dt><strong>TRIO DE ARGOLAS CRAVEJADAS</strong></dt>
+                    <p>(Vendidos separadamente)</p>
+                    <p><b>R$ 149,00</b></p>
+            </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+        
+
+        <div class="produto">
+            <img src="BrincoseArgolas/kit_vinijr.jpg" alt="produto3" class="imagem">
+            <dl class="dl">
+                    <dt><strong>KIT ARGOLA CRAVEJADO</strong></dt>
+                    <p>(Vendidos separadamente)</p>
+                    <p><b>R$ 105,00</b></p>
+            </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+        <div class="produto">
+            <img src="BrincoseArgolas/kit_argolag_e_p.jpg" alt="produto3" class="imagem">
+            <dl class="dl">
+                    <dt><strong>KIT DE ARGOLAS CRAVEJADOS GG E P</strong></dt>
+                    <p>(Vendidos separadamente)</p>
+                    <p><b>R$ 115,00</b></p>
+            </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+
+            <span class="estoque esgotado">Esgotado</span>
+        </div>
+        
+    </div>
+</body>
+</html>

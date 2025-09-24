@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.jpg" type="image/x-icon">
+    <title>Pulseiras</title>
+</head>
+<style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -500px;
+    margin: 50px;
+    background-color: #f0f0f0;
+}
+
+.galeria {
+    display: flex;
+    gap: 80px; /* Espaçamento entre os produtos */
+    justify-content: center; /* Centraliza os produtos */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+}
+
+.produto {
+    text-align: center; /* Centraliza o texto dentro de cada produto */
+    background-color: #fff; /* Fundo branco para cada produto */
+    padding: 70px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 200px; /* Largura fixa para cada produto */
+    position: relative;
+        
+}
+
+.produto img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: 200px; /* Define uma altura fixa */
+    max-width: 100%; /* Para garantir que as imagens não ultrapassem o tamanho do contêiner */
+    border-radius: 10px;
+    object-fit: cover; /* Cobre o contêiner mantendo a proporção */
+
+}
+
+.preco {
+    font-weight: bold; /* Destaca o preço */
+    color: #e74c3c; /* Cor do preço */
+}
+
+.button2 {
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px;
+    width: fit-content;
+    text-align: center; /* Centraliza o texto */
+}
+.button2:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+</style>
+
+<body>
+    <div class="galeria">
+        <div class="produto">
+            <img src="anel/anel_cobracravejada.jpg" alt="produto1" class="imagem">
+                <dl class="dl">
+                    <dt><strong>ANEL COBRA CRAVEJADO REGULÁVEL</strong></dt>
+                    <p><b>R$ 55,00</b></p>
+                </dl>     
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>
+
+
+        <div class="produto">
+            <img src="anel/anel_trevocravejado.jpg" alt="produto2" class="imagem">
+                <dl class="dl">
+                    <dt><strong>ANEL TREVO CRAVEJADO REGULÁVEL</strong></dt>
+                    <p><b>R$ 65,00</b></p>
+                </dl>
+            <a href="https://wa.me/558391169076" target="_blank"><button class="button2">Comprar</button></a>
+        </div>      
+    </div>
+        
+</body>
+</html>
